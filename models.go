@@ -31,7 +31,7 @@ func databaseUserToUser(user database.User) (User, error) {
 		Name:      user.Name,
 		ApiKey:    user.ApiKey,
 	}, nil
-}
+
 
 type Note struct {
 	ID        string    `json:"id"`
