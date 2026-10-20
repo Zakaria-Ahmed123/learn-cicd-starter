@@ -59,7 +59,7 @@ func TestGetAPIKey(t *testing.T) {
 				if err == nil {
 					t.Fatalf("expected error %v, got nil", tt.expectedError)
 				}
-				// Since errors.New creates a new error instance every time, 
+				// Since errors.New creates a new error instance every time,
 				// we compare error strings rather than direct pointer equality.
 				if err.Error() != tt.expectedError.Error() {
 					t.Errorf("expected error %v, got %v", tt.expectedError, err)
